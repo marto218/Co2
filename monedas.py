@@ -11,21 +11,16 @@ pantalla = pygame.display.set_mode((ANCHO, ALTO))
 pygame.display.set_caption("¡Recoge las monedas!")
 
 # Colores
-BLANCO = (255, 255, 255)
+BLANCO = (50, 255, 50)
 AZUL = (0, 100, 255)
 AMARILLO = (255, 255, 0)
 NEGRO = (0, 0, 0)
-
+5
 # Jugador
 jugador_tam = 50
 jugador_x = ANCHO // 2
 jugador_y = ALTO // 2
 velocidad = 6
-
-# caida monedas
-caida = 6
-moneda_y = caida
-
 
 # Moneda
 moneda_tam = 25
@@ -73,9 +68,10 @@ while True:
     pygame.draw.rect(pantalla, AMARILLO, rect_moneda)
 
     # Mostrar puntuación
-    texto = fuente.render(f"Puntos: {puntos}", True, NEGRO)
+    texto = fuente.render(f"Basura recogida: {puntos}", True, NEGRO)
     pantalla.blit(texto, (10, 10))
 
     # Actualizar pantalla
     pygame.display.flip()
     reloj.tick(60)
+
