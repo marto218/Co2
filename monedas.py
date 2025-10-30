@@ -68,8 +68,11 @@ while True:
     pygame.draw.rect(pantalla, AMARILLO, rect_moneda)
 
     # Mostrar puntuación
-    texto = fuente.render(f"Basura recogida: {puntos}", True, NEGRO)
+    texto = fuente.render(f"Basura recogida: {puntos} /15", True, NEGRO)
     pantalla.blit(texto, (10, 10))
+    if (puntos== 2): 
+        texto = fuente.render(f"¡HAS CONTRARRESTADO TU HUELLA DE CARBONO!", True, NEGRO)
+        pantalla.blit(texto, (0, 100))
 
     # Actualizar pantalla
     pygame.display.flip()
