@@ -13,7 +13,7 @@ pygame.display.set_caption("¡Recoge las monedas!")
 # Colores
 BLANCO = (50, 255, 50)
 AZUL = (0, 100, 255)
-AMARILLO = (255, 255, 0)
+AMARILLO = (255, 0, 0)
 NEGRO = (0, 0, 0)
 5
 # Jugador
